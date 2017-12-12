@@ -3,6 +3,9 @@
 #include <stdio.h>
 #include <glib.h>
 int main(int argc, char** argv) {
+
+     printf("glib_ver = %i.%i.%i\n", GLIB_MAJOR_VERSION, GLIB_MINOR_VERSION, GLIB_MICRO_VERSION);
+
      GList* list = NULL;
      list = g_list_append(list, "Hello world!");
      printf("The first item is '%s'\n", (char *)g_list_first(list)->data);
